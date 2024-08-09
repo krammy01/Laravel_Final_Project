@@ -8,7 +8,7 @@
     <div class="container mx-auto mt-6">
         <!-- Create Post Form -->
         <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h3 class="text-lg font-semibold mb-4">Create New Post</h3>
+            <h3 class="text-lg font-semibold mb-4">Create Post</h3>
             <form action="{{ route('posts.store') }}" method="POST">
                 @csrf
                 <div class="mb-4">
@@ -25,7 +25,7 @@
 
         <!-- Display Posts -->
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold mb-4">Your Posts</h3>
+            <h3 class="text-lg font-semibold mb-4">My Posts</h3>
             @if($posts->isEmpty())
                 <p class="text-gray-600">You have not created any posts yet.</p>
             @else
