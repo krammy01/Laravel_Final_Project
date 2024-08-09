@@ -13,6 +13,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                times: ['Times New Roman', 'serif'], // Added Times New Roman font
             },
         },
     },
